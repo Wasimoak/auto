@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <!-- Add any additional meta tags, CSS links, or scripts here -->
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+            background-color: #cc8db6;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div>
+
+        <p>Subject : Murex - Dodd-Frank DeMinimis Extract Request | {DATE_RANGE}</p>
+
+        <p>Hello Teams:</p>
+
+        <p>Please provide data for the period <b>{DATE_RANGE}</b> to support this month's DeMinimis calculation for the following entity/source identified below. Please note update highlighted below:</p>
+
+        <table>
+            <tr>
+                <th>Source System</th>
+                <th>Derivatives</th>
+                <th>Country</th>
+                <th>Entity</th>
+                <th>Legal Entity Identifier</th>
+            </tr>
+            <tr>
+                <td>Murex</td>
+                <td>Y</td>
+                <td>United Kingdom</td>
+                <td>Scotiabank Europe PLC</td>
+                <td>5493001DQYQ5GT8RL036</td>
+            </tr>
+        </table>
+
+        <p>If there are any changes to the list of in scope entities noted above, please confirm.</p>
+
+        <p><b>As a reminder, please be guided by the requirements for the De Minimis Calculation and note the following should be included in your data set:</b>
+            <ul>
+                <li>Transactions with a Trade Date which falls within the period but have matured should still be included in your data set</li>
+                <li><span class="highlight">Counterparties with a US Person Type with any of the following:</span>
+                    <ul>
+                        <li><span class="highlight">US legal entity</span></li>
+                        <li><span class="highlight">Foreign company guaranteed by a US legal entity and/or</span></li>
+                        <li><span class="highlight">Affiliate conduit of a US person</span></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </p>
+
+        <p>Please submit the required data by <b><u>end of day {MONTH} 4.</u></b></p>
+
+        <p>If you have any questions, please do not hesitate to ask.</p>
+
+        <p>Thanks,<br>Haojie</p>
+
+    </div>
+
+</body>
+</html>
