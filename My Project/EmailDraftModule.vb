@@ -62,9 +62,9 @@ Public Module EmailGenerator
         'Dim templateFilePath As String = Path.Combine(TemplateFolderPath, templateFileName & ".html")
         'Dim templateBody As String = File.ReadAllText(template)
         Dim dateRange As String = startDate.ToString("MMMM d, yyyy") & " - " & endDate.ToString("MMMM d, yyyy")
-
+        Dim nextBusinesDate = GetNextBusinessDay(startDate)
         ' Replace placeholders with dynamic values
-        Dim templateBody = template.Replace("{DATE_RANGE}", dateRange).Replace("{MONTH}", currentMonth)
+        Dim templateBody = template.Replace("{DATE_RANGE}", dateRange).Replace("{MONTH}", nextBusinesDate)
 
         Return templateBody
         'If File.Exists(templateFilePath) Then
@@ -98,4 +98,17 @@ Public Module EmailGenerator
             MsgBox("No email drafts were generated.", MsgBoxStyle.Information)
         End If
     End Sub
+    Function GetNextBusinessDay(ByVal currentDate As DateTime) As String
+        Dim nextDay As DateTime = currentDate.AddDays(1)
+        Dim businessDayCount As Integer = 0
+
+        While businessDayCount < 3
+            If nextDay.DayOfWeek <> DayOfWeek.Saturday AndAlso nextDay.DayOfWeek <> DayOfWeek.Sunday Then
+                businessDayCount += 1
+            End If
+            nextDay = nextDay.AddDays(1)
+        End While
+
+        Return nextDay.AddDays(-1).ToString("MMMM, d")
+    End Function
 End Module

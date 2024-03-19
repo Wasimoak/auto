@@ -135,7 +135,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -217,7 +217,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{Month}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -336,7 +336,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -417,7 +417,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -510,7 +510,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -596,7 +596,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -682,7 +682,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
@@ -768,7 +768,7 @@ Module EmailTemplates
             </ul>
         </p>
 
-        <p>Please submit the required data by <b><u>end of day {{MONTH}} 4.</u></b></p>
+        <p>Please submit the required data by <b><u>end of day {{MONTH}}.</u></b></p>
 
         <p>If you have any questions, please do not hesitate to ask.</p>
 
